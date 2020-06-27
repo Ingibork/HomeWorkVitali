@@ -14,19 +14,14 @@ public class Task6 {
     public static void main(String[] args) {
 
         String[] numb = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
-
         String [] createPhoneNumber;
-
         System.out.println(Arrays.toString(numb));
     }
 
     public static String[] createPhoneNumber(String[] numb) {
 
-
         String createPhoneNumber =("(" +numb[0]+numb[1]+numb[2] +") "+ numb[3] + numb[4] + numb[5] + " - " +
                 numb[6] + numb[7] + numb[8] + numb[9]);
-
         return numb; // не знаю как стринг обычный в массив вставить
     }
-
 }

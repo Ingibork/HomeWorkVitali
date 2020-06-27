@@ -8,15 +8,17 @@ public class Task5 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите ваше имя...");
         String name = scanner.nextLine();
-        if (name.equals("Вася")) {
+        String a = "Вася";
+        String b = "Анастасия";
+        if (name.equals(a)) {
             System.out.print("Привет! \nЯ тебя так долго ждал\n");
         }
 
-        if (name.equals("Анастасия")) {
+        if (name.equals(b)) {
             System.out.println("Я тебя так долго ждал");
         }
 
-        if (!name.equals("Вася") && !name.equals("Анастасия")) {
+        if (!name.equals(a) && !name.equals(b)) {
             System.out.println("Добрый день, а вы кто?");
         }
 

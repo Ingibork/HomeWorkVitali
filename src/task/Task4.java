@@ -18,6 +18,7 @@ public class Task4 {
             vacation = false;
             System.out.println("Идём спать дальше");
         }
+        return vacation;
         
     }
 }

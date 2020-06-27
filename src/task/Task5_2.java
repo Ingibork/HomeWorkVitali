@@ -7,6 +7,7 @@ public class Task5_2 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите ваше имя...");
         String name = scanner.nextLine();
+
         switch (name) {
             case "Вася":
                 System.out.print("Привет! \nЯ тебя так долго ждал\n");

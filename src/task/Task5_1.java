@@ -7,10 +7,12 @@ public class Task5_1 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите ваше имя...");
         String name = scanner.nextLine();
+        String a = "Вася";
+        String b = "Анастасия";
 
-        if (name.equals("Вася")) {
+        if (name.equals(a)) {
             System.out.print("Привет! \nЯ тебя так долго ждал\n");
-        } else if (name.equals("Анастасия"))
+        } else if (name.equals(b))
             System.out.println("Я тебя так долго ждал");
 
         else System.out.println("Добрый день, а вы кто?");
