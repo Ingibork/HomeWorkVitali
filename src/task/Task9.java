@@ -23,12 +23,10 @@ public class Task9 {
             a1 = a % 10;
             a1 = a1 + values;
             a /= 10;
-
             if (a / 10 != 0)
                 System.out.print(a1 + " * ");
             else
                 System.out.print(" * " + a1);
         }
-
     }
 }

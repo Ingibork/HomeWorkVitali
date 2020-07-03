@@ -8,7 +8,6 @@ public class Task11 {
     public static void main(String[] args) {
         double a = 1;
         double b = 3;
-
         double result = a;
         do {
             double tmp = result * b;
