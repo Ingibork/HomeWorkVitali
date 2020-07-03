@@ -1,6 +1,9 @@
 package arraysMain;
 import java.util.Scanner;
-
+/**
+ *  2.1 Вывести все элементы в консоль при помощи do....while, while, for, foreach.
+ *  Элементы массива вводить через консоль. Массив хранит в себе числа.
+ */
 public class arraysHome1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

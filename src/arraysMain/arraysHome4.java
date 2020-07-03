@@ -3,8 +3,7 @@ package arraysMain;
 import java.util.Scanner;
 
 /**
- * 2.1 Вывести все элементы в консоль при помощи do....while, while, for, foreach.
- * Элементы массива вводить через консоль. Массив хранит в себе числа.
+ *  2.2 Вывести каждый второй элемент массива
  */
 public class arraysHome4 {
     public static void main(String[] args) {
