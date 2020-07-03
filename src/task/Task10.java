@@ -14,5 +14,6 @@ public class Task10 {
         System.out.println("Введите степень в которую его возвести");
         int b = scanner.nextInt();
         System.out.println(Math.pow(a, b));
+
     }
 }
