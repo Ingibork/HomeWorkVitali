@@ -18,40 +18,46 @@ public class hanoi {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите количество колец - ");
         int size = scanner.nextInt();
-        if (size>2) {
+        if (size > 2) {
             if (size < 9) {
-                char[][] tower = new char[size][3];
+                int[][] tower = new int[size][3];
                 for (int i = 0; i < tower.length; i++) {
-                    for (int j = 0; j < 3; j++) {    //идём по столбцам
-                        if (j == 0) {
-                            tower[i][0] = (char) (i + 49);
-                        } else tower[i][j] = (char) ('*');
-                        System.out.print(" " + tower[i][j] + " ");    //вывод элемента
-                    }
-                    System.out.println();    //перенос строки ради визуального сохранения табличной формы
+                    tower[i][0] = i + 1;
                 }
-                scanner = new Scanner(System.in);
-                System.out.print("11 ->> 1 переместить на 2 ");
-                size = scanner.nextInt();
-                if (size == 11)
-                        for (int i = 0; i < tower.length; i++) {
-                            for (int j = 0; j < 3; j++) {
-                                    tower[i][0] = (char) (i + 49);
-                                    tower[0][0] = (char) ('*');
-/*
-String a =[1][1];
-[1][1]=[2][2];
-[2][2]=a;
- */
-                                System.out.print(" " + tower[i][j] + " ");
-                            }
-                            System.out.println();
+                printTower(tower);
+                for (int i = 7; i < tower.length; i--) {
+                    for (int j = 0; j < tower[i].length; j++) {
+                        int value = tower[i][j];
+                        if (value<tower[i+1][j]) {
+
+                            System.out.print(value + " ");
                         }
+                        System.out.print(value + " !!!!");
+                    }
                 }
             }
+
         }
     }
 
+    public static void printTower(int[][] tower) {
+        for (int i = 0; i < tower.length; i++) {
+            for (int j = 0; j < tower[i].length; j++) {
+                int value = tower[i][j];
+                if (value == 0) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print(value + " ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+   // public static void exaple(int[][] tower) {
+
+//    }
+}
 
 
 
