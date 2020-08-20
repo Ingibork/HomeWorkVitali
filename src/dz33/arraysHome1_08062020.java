@@ -1,6 +1,4 @@
-package arraysMain;
-
-import java.util.Arrays;
+package dz32;
 
 /**
  * 1. По заданному массиву найдите число, которое встречается нечетное количество раз

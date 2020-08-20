@@ -1,6 +1,4 @@
-package PC;
-
-import java.util.RandomAccess;
+package pc;
 
 /**
  * 4*.Симулятор загрузки ПК:
@@ -32,7 +30,6 @@ public class Computer implements IComputer {
     boolean BIOS;
     boolean comport;
     boolean hdd;
-    boolean check;
 
     Computer(boolean cp, boolean rom, boolean ram64, boolean graphics, boolean ram, boolean BIOS,
              boolean comport, boolean hdd) {
@@ -46,73 +43,85 @@ public class Computer implements IComputer {
         this.hdd = hdd;
     }
 
-    void test() {
+    int count = 0;
+
+    public void test() {
+
 
         if (cp) {
             System.out.println("cp тест пройден - " + cp);
+            count ++;
         } else {
             System.out.println("cp error 1337!!!!!!!!!!!");
             return;
         }
         if (rom) {
             System.out.println("rom тест пройден - " + rom);
+            count ++;
         } else {
             System.out.println("rom error 1337!!!!!!!!!!!");
             return;
         }
         if (ram64) {
             System.out.println("ram64 тест пройден - " + ram64);
+            count ++;
         } else {
             System.out.println("ram64 error 1337!!!!!!!!!!!");
             return;
         }
         if (graphics) {
             System.out.println("graphics тест пройден - " + graphics);
+            count ++;
         } else {
             System.out.println("graphics error 1337!!!!!!!!!!!");
             return;
         }
         if (ram) {
             System.out.println("ram тест пройден - " + ram);
+            count ++;
         } else {
             System.out.println("ram error 1337!!!!!!!!!!!");
             return;
         }
         if (BIOS) {
             System.out.println("BIOS тест пройден - " + BIOS);
+            count ++;
         } else {
             System.out.println("BIOS error 1337!!!!!!!!!!!");
             return;
         }
         if (comport) {
             System.out.println("comport тест пройден - " + comport);
+            count ++;
         } else {
             System.out.println("comport error 1337!!!!!!!!!!!");
             return;
         }
         if (hdd) {
             System.out.println("hdd тест пройден - " + hdd);
+            count ++;
         } else {
             System.out.println("hdd error 1337!!!!!!!!!!!");
         }
-        check = true; // в Void-е не верну его...
+
     }
 
+    public void run() {
+        if (count == 8) {
+                System.out.println("Приветствие");
+            } else System.out.println("СИНИЙ ЭКРАН СМЕРТИ!!!! 88005553535Error");
+        }
 
-    void run() {
-        if (check) {
-            System.out.println("СИНИЙ ЭКРАН СМЕРТИ!!!!");
-        } else System.out.println("Приветствие");
-    }
 
 
     @Override
     public boolean tests() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean runs() {
-        return false;
+        return true;
     }
+
 }

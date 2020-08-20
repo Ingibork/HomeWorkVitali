@@ -1,6 +1,6 @@
-package PC;
+package pc;
 
-public interface IComputer {
+interface IComputer {
     boolean tests();
     boolean runs();
 }

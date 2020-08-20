@@ -27,7 +27,7 @@ package color;
         private final int BRIGHTBLUE = 5;
         private final int BLUE = 6;
         private final int PURPLE = 7;
-        private int number = 2;
+        private int number;
         private String name;
 
         // 2.1 Конструктор принимающий int
@@ -74,7 +74,7 @@ package color;
                     this.name = "Фиолетовый";
                     break;
                 default:
-                    this.name = "Ничего";
+                    this.name = "неизвестно";
                     break;
             }
             return this.name;
