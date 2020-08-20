@@ -1,4 +1,4 @@
-package hanoi_towers3.hanoi_towers;
+package dz34;
 
 public class reserv {
    /*

@@ -1,4 +1,4 @@
-package task;
+package dz31;
 
 
 public class Task2 {

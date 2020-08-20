@@ -1,4 +1,4 @@
-package pc;
+package dz33.pc;
 
 interface IComputer {
     boolean tests();

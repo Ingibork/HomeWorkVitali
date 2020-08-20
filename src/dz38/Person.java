@@ -1,6 +1,4 @@
-package stringgeneric;
-import java.util.Random;
-import java.util.LinkedList;
+package dz38;
 
 public class Person {
 

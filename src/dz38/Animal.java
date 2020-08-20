@@ -1,6 +1,4 @@
-package stringgeneric;
-
-import java.util.Random;
+package dz38;
 
 public class Animal {
     int age;

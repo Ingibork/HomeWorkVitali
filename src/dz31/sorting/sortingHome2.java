@@ -1,7 +1,6 @@
-package sorting;
+package dz31.sorting;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 /**
  * Выполнить сортировку массива с числами. Алгоритм пузырёк.

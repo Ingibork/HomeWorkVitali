@@ -1,4 +1,4 @@
-package calculator;
+package dz35;
 
 /**
  * ООП, Калькулятор:

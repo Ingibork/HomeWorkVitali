@@ -1,7 +1,6 @@
-package task;
+package dz31;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 /*
  Создать СТАТИЧЕСКИЙ метод createPhoneNumber рядом с методо main, данный метод будет

@@ -1,4 +1,4 @@
-package pc;
+package dz33.pc;
 
 public class ComputerStart {
     public static void main(String[] args) {

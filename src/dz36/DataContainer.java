@@ -1,4 +1,4 @@
-package generic;
+package dz36;
 
 public class DataContainer<T> {
     private T[] data;

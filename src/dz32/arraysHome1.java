@@ -1,4 +1,4 @@
-package arraysMain;
+package dz32;
 import java.util.Scanner;
 /**
  *  2.1 Вывести все элементы в консоль при помощи do....while, while, for, foreach.

@@ -1,4 +1,4 @@
-package color;
+package dz33;
 
     /**
      * 2. Создать класс Color:

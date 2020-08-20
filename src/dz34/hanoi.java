@@ -1,4 +1,4 @@
-package hanoi_towers3.hanoi_towers;
+package dz34;
 
 
 import java.util.Scanner;
@@ -30,8 +30,15 @@ public class hanoi {
         for (int i = 0; i < map.length; i++) {
             map[i][0] = i + 1;
         }
-        printMap(map);
 
+        for (int i = 0; i < map.length; i++) {
+            if (map[i][map.length-1] !=0){
+                System.out.println("Игра закончена");
+                break;
+            }
+        }
+
+        printMap(map);
 
         int[] indexs = getIndexFprOperation(getNextOperation());
 
@@ -81,6 +88,7 @@ public class hanoi {
 
         printMap(map);
     }
+
 
 
     public static int[] getIndexFprOperation(int operation) {

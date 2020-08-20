@@ -1,4 +1,4 @@
-package calculator;
+package dz35;
 
 /**
  * * 8*. Создать класс CalculatorWithCounter, все методы в данном классе НЕ статические.

@@ -1,4 +1,4 @@
-package arraysMain;
+package dz32;
 
 import java.util.Scanner;
 

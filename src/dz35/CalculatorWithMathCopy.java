@@ -1,4 +1,4 @@
-package calculator;
+package dz35;
 
 
 public class CalculatorWithMathCopy extends CalculatorWithOperator {
